@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+.header {
+  text-align: center;
+}
+
+body {
+  background-color: #ffffff;
+  position: relative;
+  margin: 3rem auto;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  max-width: 685px;
+  min-height: 100vh;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  font-size: 14px;
+  gap:20px;
+}
+
+.input {
+  color: #000;
+  font-size: 14px;
+  border-radius: 12px;
+  border: 1px solid #bdbdbd;
+  width: 80%;
+  padding: 1rem;
+}
+
+.input::placeholder {
+  color: #828282;
+  font-size: 14px;
+}
+
+.addButton {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 12px;
+  background: #2f80ed;
+  box-shadow: 0px 2px 6px 0px rgba(127, 177, 243, 0.4);
+  width: 50%;
+  padding: 1rem 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.addButton:hover:enabled {
+  opacity: 0.7;
+}
+
+.addButton:disabled {
+  background: #2f80ed90;
+  cursor: not-allowed;
+}
+
+
+.todoContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.deleteIcon {
+  color: #bdbdbd;
+  font-size: 10px;
+  margin: 0 0.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.deleteIcon:hover {
+  color: red;
+}
